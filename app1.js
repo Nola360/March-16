@@ -8,8 +8,12 @@ const clearBtn = document.querySelector('.btn');
 
 console.log(clearBtn);
 
+
+
+
 clearBtn.addEventListener('click', function () {
-  this.remove();
+  let list = document.querySelector('.task')
+  list.remove();
   console.log('delete');
 })
 
