@@ -34,15 +34,16 @@ clearBtn.addEventListener('click', function () {
 // })
 
 submit.addEventListener('click', function () {
-  let text = document.querySelector('h1');
+  let text = document.querySelector('.message');
   if (input.value === '') {
     alert('add input');
     text.style.color = 'rgba(255,60,60)';
-    text.textContent = 'Input field required';
+    text.innerHTML = '<h1>Error</h1>';
     return false
   } else {
-    text.textContent = 'Success';
+    // text.textContent = 'Success';
     text.style.color = 'green';
+    text.innerHTML = '<h1></h1>';
     // document.container.style.backgroundColor = 'white';
   }
 
